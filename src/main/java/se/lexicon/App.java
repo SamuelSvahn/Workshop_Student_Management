@@ -14,5 +14,6 @@ public class App
 
         StudentDAO studentDAO = context.getBean(StudentDAO.class);
 
+        ComponentScanConfig componentScanConfig= context.getBean(ComponentScanConfig.class);
     }
 }

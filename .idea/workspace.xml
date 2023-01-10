@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55d60542-6e2a-4878-8620-9e6f4de6e35e" name="Changes" comment="Cleaned the code now will start with logics">
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/data_access/impl/Sequencer/StudentSequencer.java" afterDir="false" />
+    <list default="true" id="55d60542-6e2a-4878-8620-9e6f4de6e35e" name="Changes" comment="Tried in one way will change it to a more efficient">
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/util/ScannerInputService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/util/UserInputService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/data_access/impl/StudentDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/data_access/impl/StudentDAOImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +87,13 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1673358391967</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="Tried in one way will change it to a more efficient">
+      <created>1673360156673</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1673360156673</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -104,6 +110,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Started my new student manager project" />
     <MESSAGE value="Cleaned the code now will start with logics" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned the code now will start with logics" />
+    <MESSAGE value="Tried in one way will change it to a more efficient" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tried in one way will change it to a more efficient" />
   </component>
 </project>

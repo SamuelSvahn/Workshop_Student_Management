@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55d60542-6e2a-4878-8620-9e6f4de6e35e" name="Changes" comment="Started my new student manager project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Service/StudentManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Service/StudentManagementImpl.java" afterDir="false" />
+    <list default="true" id="55d60542-6e2a-4878-8620-9e6f4de6e35e" name="Changes" comment="Cleaned the code now will start with logics">
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/data_access/impl/Sequencer/StudentSequencer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/config/ComponentScanConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/config/ComponentScanConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/data_access/impl/StudentDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/data_access/impl/StudentDAOImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +81,13 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1673356811028</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="Cleaned the code now will start with logics">
+      <created>1673358391967</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1673358391967</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,6 +103,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Started my new student manager project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started my new student manager project" />
+    <MESSAGE value="Cleaned the code now will start with logics" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned the code now will start with logics" />
   </component>
 </project>

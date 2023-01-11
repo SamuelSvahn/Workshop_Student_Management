@@ -4,6 +4,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import se.lexicon.config.ComponentScanConfig;
 import se.lexicon.data_access.StudentDAO;
 import se.lexicon.models.Student;
+import se.lexicon.util.UserInputService;
 
 
 public class App 
@@ -14,6 +15,6 @@ public class App
 
         StudentDAO studentDAO = context.getBean(StudentDAO.class);
 
-        ComponentScanConfig componentScanConfig= context.getBean(ComponentScanConfig.class);
+        UserInputService userInputService =context.getBean(UserInputService.class);
     }
 }

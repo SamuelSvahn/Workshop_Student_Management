@@ -7,6 +7,7 @@ import se.lexicon.config.ComponentScanConfig;
 import se.lexicon.data_access.StudentDAO;
 import se.lexicon.Service.StudentManagement;
 import se.lexicon.models.Student;
+import se.lexicon.util.UserInputService;
 
 import java.util.List;
 @Component
@@ -15,7 +16,7 @@ public class StudentManagementImpl implements StudentManagement {
     @Autowired
     StudentDAO studentDAO;
     @Autowired
-    ComponentScanConfig scanner;
+    UserInputService scanner;
 
 
 

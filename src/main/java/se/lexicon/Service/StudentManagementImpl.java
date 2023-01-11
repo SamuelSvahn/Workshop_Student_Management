@@ -21,8 +21,6 @@ public class StudentManagementImpl implements StudentManagement {
 
 
 
-
-
     @Override
     public Student create() {
         return null;
@@ -45,7 +43,7 @@ public class StudentManagementImpl implements StudentManagement {
 
     @Override
     public List<Student> findAll() {
-        return null;
+        return studentDAO.findAll();
     }
 
     @Override

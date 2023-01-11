@@ -25,8 +25,11 @@ public class StudentDAOImpl implements StudentDAO {
     @Override
     public Student find(int id) {
         if (id == 0) throw new IllegalArgumentException("Id was null");
-        return (Student) students.stream()
-                .filter(student -> student.getId() == id);
+        for (Student student : students){
+            if (student.getId() != 0 && student.getId() == id)
+                return student;
+        }
+        return null;
     }
 
 

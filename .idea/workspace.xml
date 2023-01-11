@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5c217cc-60f2-4ec6-8e90-bb8e6def97b7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="a5c217cc-60f2-4ec6-8e90-bb8e6def97b7" name="Changes" comment="cleaned">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/Service/StudentManagementImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Service/StudentManagementImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/util/ScannerInputService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/util/ScannerInputService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +67,13 @@
       <option name="presentableId" value="Default" />
       <updated>1673440706902</updated>
     </task>
+    <task id="LOCAL−00001" summary="cleaned">
+      <created>1673447932469</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1673447932469</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -81,20 +87,8 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/se/lexicon/Service/StudentManagementImpl.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/se/lexicon/Service/StudentManagementImpl.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="cleaned" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaned" />
   </component>
 </project>

@@ -22,6 +22,7 @@ public class App
 
         Student createdStudent= studentManagement.create();
         studentManagement.save(createdStudent);
+        System.out.println(studentManagement.findAll());
 
 
 

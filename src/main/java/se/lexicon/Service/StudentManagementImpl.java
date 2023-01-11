@@ -25,9 +25,11 @@ public class StudentManagementImpl implements StudentManagement {
     public Student create() {
         System.out.println("Enter your person id:");
         int id= scanner.getInt();
+        if(id== 0) throw new IllegalArgumentException("Id was null");
 
         System.out.println("Enter your name");
         String name= scanner.getString();
+        if(name == null) throw new IllegalArgumentException("Name was null");
 
         Student student =new Student(id,name);
 
@@ -41,10 +43,12 @@ public class StudentManagementImpl implements StudentManagement {
     }
 
     @Override
-    public Student find(int id) {//Todo
+    public Student find(int id) {
         System.out.println("Enter id of person you looking for:");
         int firstId= scanner.getInt();
-        return null;
+        if(firstId== 0) throw new IllegalArgumentException("id was not valid");
+        Student createdStudent= studentDAO.find(firstId);
+        return createdStudent;
     }
 
     @Override
@@ -59,6 +63,9 @@ public class StudentManagementImpl implements StudentManagement {
 
     @Override
     public Student edit(Student student) {
+        System.out.println("What id do you want to edit?");
+
+
         return null;
     }
 }

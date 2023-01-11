@@ -23,7 +23,15 @@ public class StudentManagementImpl implements StudentManagement {
 
     @Override
     public Student create() {
-        return null;
+        System.out.println("Enter your person id:");
+        int id= scanner.getInt();
+
+        System.out.println("Enter your name");
+        String name= scanner.getString();
+
+        Student student =new Student(id,name);
+
+        return student;
     }
 
     @Override

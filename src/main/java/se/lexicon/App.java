@@ -1,6 +1,7 @@
 package se.lexicon;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import se.lexicon.Service.StudentManagementImpl;
 import se.lexicon.config.ComponentScanConfig;
 import se.lexicon.data_access.StudentDAO;
 import se.lexicon.models.Student;
@@ -16,5 +17,12 @@ public class App
         StudentDAO studentDAO = context.getBean(StudentDAO.class);
 
         UserInputService userInputService =context.getBean(UserInputService.class);
+
+        StudentManagementImpl studentManagement = context.getBean(StudentManagementImpl.class);
+
+        Student createdStudent= studentManagement.create();
+        studentManagement.save(createdStudent);
+
+
     }
 }

@@ -36,11 +36,14 @@ public class StudentManagementImpl implements StudentManagement {
 
     @Override
     public Student save(Student student) {
-        return null;
+        Student createdStudent= studentDAO.save(student);
+        return createdStudent;
     }
 
     @Override
-    public Student find(int id) {
+    public Student find(int id) {//Todo
+        System.out.println("Enter id of person you looking for:");
+        int firstId= scanner.getInt();
         return null;
     }
 

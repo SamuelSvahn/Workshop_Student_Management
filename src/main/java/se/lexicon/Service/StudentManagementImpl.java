@@ -9,6 +9,7 @@ import se.lexicon.Service.StudentManagement;
 import se.lexicon.models.Student;
 import se.lexicon.util.UserInputService;
 
+import java.util.ArrayList;
 import java.util.List;
 @Component
 public class StudentManagementImpl implements StudentManagement {

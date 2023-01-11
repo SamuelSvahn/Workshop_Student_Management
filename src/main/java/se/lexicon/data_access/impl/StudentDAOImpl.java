@@ -7,6 +7,7 @@ import se.lexicon.models.Student;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Component
 public class StudentDAOImpl implements StudentDAO {
@@ -23,18 +24,22 @@ public class StudentDAOImpl implements StudentDAO {
 
     @Override
     public Student find(int id) {
-        if(id == 0) throw new IllegalArgumentException("Id was null");
-
-        return null; //students.stream().filter(student -> student.getId()==(id)).findFirst();
+        if (id == 0) throw new IllegalArgumentException("Id was null");
+        return (Student) students.stream()
+                .filter(student -> student.getId() == id);
     }
+
 
     @Override
     public List<Student> findAll() {
-        return null;
+        return new ArrayList<>(students);
     }
 
     @Override
     public void delete(int id) {
+        Student student= find(id);
+        if(student== null) throw new IllegalArgumentException("Student does not exist");
+        students.remove(student);
 
     }
 }

@@ -24,6 +24,13 @@ public class App
         studentManagement.save(createdStudent);
         System.out.println(studentManagement.findAll());
 
+       /* System.out.println(studentManagement.find(1));
+        System.out.println(studentManagement.findAll());
+
+        studentManagement.remove(1);
+        System.out.println(studentManagement.findAll());
+*/
+
 
 
     }

@@ -11,6 +11,8 @@ import se.lexicon.util.UserInputService;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+
 @Component
 public class StudentManagementImpl implements StudentManagement {
 
@@ -53,7 +55,11 @@ public class StudentManagementImpl implements StudentManagement {
 
     @Override
     public Student remove(int id) {
-        return null;
+        System.out.println("Enter id for person you want to remove");
+        int firstId= scanner.getInt();
+        if(firstId== 0)throw new IllegalArgumentException("Id was null");
+
+        return remove(firstId) ;
     }
 
     @Override
@@ -64,8 +70,11 @@ public class StudentManagementImpl implements StudentManagement {
     @Override
     public Student edit(Student student) {
         System.out.println("What id do you want to edit?");
+        int firstId= scanner.getInt();
+        if(firstId== 0)throw new IllegalArgumentException("Id was null");
+        Student editedStudent = find(firstId);
+        edit(editedStudent);
 
-
-        return null;
+        return editedStudent;
     }
 }

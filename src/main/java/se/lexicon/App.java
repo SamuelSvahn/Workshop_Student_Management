@@ -8,19 +8,18 @@ import se.lexicon.models.Student;
 import se.lexicon.util.UserInputService;
 
 
-public class App 
-{
-    public static void main( String[] args ) {
+public class App {
+    public static void main(String[] args) {
 
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ComponentScanConfig.class);
 
         StudentDAO studentDAO = context.getBean(StudentDAO.class);
 
-        UserInputService userInputService =context.getBean(UserInputService.class);
+        UserInputService userInputService = context.getBean(UserInputService.class);
 
         StudentManagementImpl studentManagement = context.getBean(StudentManagementImpl.class);
 
-        Student createdStudent= studentManagement.create();
+        Student createdStudent = studentManagement.create();
         System.out.println(studentManagement.save(createdStudent));
 
 
@@ -29,8 +28,6 @@ public class App
 
         studentManagement.remove(1);
         System.out.println(studentManagement.findAll());
-
-
 
 
     }

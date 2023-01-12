@@ -12,12 +12,12 @@ import java.util.Optional;
 @Component
 public class StudentDAOImpl implements StudentDAO {
 
-    List<Student> students= new ArrayList<>();
+    List<Student> students = new ArrayList<>();
 
 
     @Override
     public Student save(Student student) {
-        if(student== null) throw new IllegalArgumentException("Student was not valid");
+        if (student == null) throw new IllegalArgumentException("Student was not valid");
         students.add(student);
         return student;
     }
@@ -25,7 +25,7 @@ public class StudentDAOImpl implements StudentDAO {
     @Override
     public Student find(int id) {
         if (id == 0) throw new IllegalArgumentException("Id was null");
-        for (Student student : students){
+        for (Student student : students) {
             if (student.getId() != 0 && student.getId() == id)
                 return student;
         }
@@ -40,8 +40,8 @@ public class StudentDAOImpl implements StudentDAO {
 
     @Override
     public void delete(int id) {
-        Student student= find(id);
-        if(student== null) throw new IllegalArgumentException("Student does not exist");
+        Student student = find(id);
+        if (student == null) throw new IllegalArgumentException("Student does not exist");
         students.remove(student);
 
     }

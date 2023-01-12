@@ -14,7 +14,7 @@ public interface StudentManagement {
 
     Student remove(int id);
 
-    List<Student>findAll();
+    List<Student> findAll();
 
-    Student edit (Student student);
+    Student edit(Student student);
 }

@@ -21,15 +21,15 @@ public class App
         StudentManagementImpl studentManagement = context.getBean(StudentManagementImpl.class);
 
         Student createdStudent= studentManagement.create();
-        studentManagement.save(createdStudent);
-        System.out.println(studentManagement.findAll());
+        System.out.println(studentManagement.save(createdStudent));
 
-       /* System.out.println(studentManagement.find(1));
-        System.out.println(studentManagement.findAll());
+
+        System.out.println(studentManagement.find(1));
+
 
         studentManagement.remove(1);
         System.out.println(studentManagement.findAll());
-*/
+
 
 
 

@@ -46,20 +46,18 @@ public class StudentManagementImpl implements StudentManagement {
 
     @Override
     public Student find(int id) {
-        System.out.println("Enter id of person you looking for:");
-        int firstId= scanner.getInt();
-        if(firstId== 0) throw new IllegalArgumentException("id was not valid");
-        Student createdStudent= studentDAO.find(firstId);
+        if(id== 0) throw new IllegalArgumentException("id was not valid");
+        Student createdStudent= studentDAO.find(id);
         return createdStudent;
     }
 
     @Override
     public Student remove(int id) {
-        System.out.println("Enter id for person you want to remove");
-        int firstId= scanner.getInt();
-        if(firstId== 0)throw new IllegalArgumentException("Id was null");
-
-        return remove(firstId) ;
+        if(id== 0)throw new IllegalArgumentException("Id was null");
+        Student student= find(id);
+        if(student== null) throw new IllegalArgumentException("Student does not exist");
+        studentDAO.delete(id);
+        return null;
     }
 
     @Override
